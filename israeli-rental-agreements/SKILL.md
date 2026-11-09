@@ -1,6 +1,6 @@
 ---
 name: israeli-rental-agreements
-description: Guide users through Israeli rental agreements, tenant and landlord rights, and lease negotiation. Use when user asks about rental contracts (chozeh schirut), tenant rights, landlord obligations, deposits (arancia), rent increases, index-linked rent (hatzmada la'madad), the Fair Rental Law 2017, eviction procedures, or common red flags in Israeli leases. Covers essential contract elements, guarantees, dispute resolution, and the Tenant Protection Law. Do NOT use for commercial leases, property purchase transactions, or mortgage advice.
+description: "Explains Israeli residential leases: reviewing a lease, termination and notice, repairs and set-off, deposits and guarantees, landlord entry, and index-linked rent. Use when the user asks about a residential rental contract (chozeh schirut), tenant or landlord rights, a deposit or guarantee, a rent increase or CPI linkage (hatzmada la'madad), ending a lease, or red flags in a lease. First checks whether the 2017 fair-rental chapter of the Rental and Borrowing Law (ss.25א-25טו) applies, since some leases are excluded, and states conditional rights such as repair-and-recover and set-off with their conditions. Not legal advice and not representation. Do NOT use for commercial leases, property purchases or mortgages, or protected (key-money) tenancies beyond flagging them. For an Execution Office file on a cheque or promissory note use israeli-hotzaa-lapoal-debtor; for wider statute research, hebrew-legal-research."
 license: MIT
 compatibility: No network required. Works offline with reference data.
 ---
@@ -32,7 +32,7 @@ Israel's residential rental market is governed by several key laws:
 
 - **Fit for habitation (25ו + First Schedule).** Unfitness is defined ONLY by a closed six-item list: no drainage/sewage; no electricity or lighting; no ventilation and natural-light openings with doors and windows to close them, including a lockable main entrance door; no drinking water; NO PARTITION BETWEEN THE TOILET AND THE APARTMENT; unreasonable risk to safety or health. Delivering an unfit apartment is a BREACH (25ו(ב)). 25ו is the only provision that cannot be varied at all (25יד(1)). Do not substitute a plausible list of amenities: a water heater is not in the Schedule, the toilet partition is.
 - **Suitable for living (25ה)** is a separate, weaker duty with אי-התאמה remedies. Do not conflate it with 25ו.
-- **Repairs (25ח).** The landlord fixes any non-minor defect not caused by the tenant's unreasonable use within 30 days of the request, or 3 days if the defect makes reasonable habitation impossible. Miss that and 25ח(ג) applies s.9(א),(ב): the tenant may repair and recover reasonable expenses (after reasonable advance notice, waived for an urgent repair by s.9(ג)), or reduce the rent in PROPORTION to the lost value. Section 25 makes debts arising from the tenancy set-off-able, and 25יד(2) bars waiving that against the tenant, so reasonable expenses actually incurred this way may be set off against rent. The tenant is liable only for defects from UNREASONABLE use (25ח(א)), not the same test as "normal wear and tear".
+- **Repairs (25ח).** The landlord fixes any non-minor defect not caused by the tenant's unreasonable use within a reasonable time and no later than 30 days after the request; an urgent defect that makes reasonable habitation impossible must be fixed within a reasonable time and no later than 3 days. Miss that and 25ח(ג) applies s.9(א),(ב): the tenant may repair and recover reasonable expenses (after reasonable advance notice, waived for an urgent repair by s.9(ג)), or reduce the rent in PROPORTION to the lost value. The 2017 amendment deleted the former "in writing" requirement from s.9(ב): a dated written message is prudent evidence, not a legal precondition, and any notice clause in the lease has to be checked separately. Section 25 makes debts arising from the tenancy set-off-able, and 25יד(2) bars waiving that against the tenant, so reasonable expenses actually incurred this way may be set off against rent. Deduction is not automatic. The tenant is liable only for defects from UNREASONABLE use (25ח(א)), not the same test as "normal wear and tear".
 - **Guarantee ceiling (25י(ב))** covers only guarantees costing the tenant money, capped at the lower of 3 months' rent or one-third of the lease value. The rest of 25י binds every guarantee: see Step 3.
 - **Written form (25ב)** requires writing and signatures, and says expressly that non-compliance does NOT affect validity. An oral residential lease is a valid contract.
 - **Contents (25ג + Second Schedule)** makes eight particulars mandatory, including item 7, the landlord's disclosure of known non-minor defects and known material nuisances.
@@ -77,13 +77,15 @@ The lease's required contents are not a matter of good practice: section 25ג ma
 ### Step 3: Deposits and Guarantees
 Full text of section 25י and of the Guarantee Law is in `references/statutory-provisions.md`.
 
-| Guarantee Type | Hebrew | Description | Risk Level for Tenant |
-|---------------|--------|-------------|----------------------|
-| Bank Guarantee | ערבות בנקאית | Bank issues a guarantee letter, funds frozen in your account | Low (controlled release) |
-| Post-Dated Cheques | המחאות דחויות | Blank or post-dated cheques held by the landlord | Medium (can be cashed) |
-| Cash Deposit | פיקדון מזומן | Cash or transfer held by the landlord | Medium (risk of non-return) |
-| Promissory Note | שטר חוב | Note for a set amount, enforceable through the Execution Office without a full hearing | High |
-| Personal Guarantors | ערבים | Third parties guarantee the tenant's obligations | Varies (personal liability) |
+| Guarantee Type | Hebrew | Description | What to check |
+|---------------|--------|-------------|---------------|
+| Bank Guarantee | ערבות בנקאית | Bank issues a guarantee letter, often against funds frozen in the tenant's account | Its demand terms: a guarantee payable on the landlord's first written demand lets the bank pay before any lease dispute is decided. Also amount, expiry and fees |
+| Post-Dated Cheques | המחאות דחויות | Blank or post-dated cheques held by the landlord | They can be presented, or filed for execution as a bill; check the amounts and what they secure |
+| Cash Deposit | פיקדון מזומן | Cash or transfer held by the landlord | Return terms and fruits (25י(ה)); proof of payment |
+| Promissory Note | שטר חוב | Note for a set amount; can be filed for execution as a bill without a prior lawsuit | The tenant's answer is a timely objection (use israeli-hotzaa-lapoal-debtor); cap the amount in the contract |
+| Personal Guarantors | ערבים | Third parties guarantee the tenant's obligations | The guarantors' personal liability; Guarantee Law s.8 (below) |
+
+Do not rank these by instrument name alone. Compare the amount, the cost to the tenant, expiry, the demand conditions and how practical it is to contest a demand. Whatever the instrument, the 25י(ג)-(ד) grounds and notice duty bind the landlord; a bank's duty to pay under its own guarantee is a separate question.
 
 **The 25י(ב) ceiling is scoped; the rest of 25י is not.** This distinction decides most real questions:
 
@@ -112,7 +114,7 @@ Rent changes only through a mechanism in the contract: CPI linkage (הצמדה �
 | What is indexed | Rent adjusts to reflect changes in the CPI (Madad HaMechirim LaTzarchan) |
 | Published by | Central Bureau of Statistics (Lishkat HaStatistika HaMerkazit) |
 | Frequency | Per the clause: annually, at renewal, or on each payment (many leases link every payment to the index known on its due date) |
-| Direction | Up or down, unless the lease has a floor clause (the calculator's `--floor` applies one) |
+| Direction | Up or down, unless the lease has a floor clause |
 | Typical clause | "Rent will be adjusted according to the change in the CPI from [base month] to [adjustment month]" |
 | Base index | As the clause defines it. Many leases use the index KNOWN on the signing date, i.e. the last one published, not the index FOR the signing month; a month's CPI is published in the following month |
 
@@ -133,31 +135,31 @@ Operational summary of Step 1. Cite the section rather than calling a statutory 
 |---|---|---|
 | Landlord | Deliver the apartment fit for habitation, on the agreed date, free of persons and objects | 25ו, 25ז. Delivering an unfit apartment is a breach, and 25ו cannot be contracted out of |
 | Landlord | Supply maintenance and use instructions for the apartment and its installations, no later than handover | 25ז(ג) |
-| Landlord | Repair any non-minor defect not caused by the tenant's unreasonable use: 30 days, or 3 days if urgent | 25ח(ב) |
+| Landlord | Repair any non-minor defect not caused by the tenant's unreasonable use within a reasonable time, capped at 30 days, or 3 days if urgent | 25ח(ב) |
 | Landlord | Disclose known non-minor defects and known material nuisances, in the contract | 25ג + Second Schedule item 7 |
 | Landlord | Notify the tenant in writing before handing the apartment to a buyer | 25יא |
 | Landlord | Return the guarantee within 60 days, including its fruits | 25י(ה) |
-| Landlord | Report rental income. In 2026 residential rent is fully tax-exempt up to 5,654 NIS a month and partly exempt below 11,308; otherwise the landlord picks a track, such as the 10% track | Income Tax Ordinance; a landlord matter |
+| Landlord | Check rental-income reporting and tax obligations. For qualifying residential rental income, the 2026 exemption ceiling is NIS 5,654 per month. Partial exemption applies where NIS 5,654 < monthly rent < NIS 11,308, subject to the statutory conditions and aggregation rules. The ordinary 10% route taxes gross qualifying rental income without ordinary expense deductions. Since 2023, the conditional exception for a qualifying single-home owner who rents a home or makes qualifying institution payments permits deduction of qualifying actual payments, capped at the lower of qualifying rental income and NIS 90,000 annually; verify all eligibility conditions and prevent duplicate deductions. See the dated official sources in `references/fair-rental-law-summary.md` | Income Tax Ordinance; a landlord matter |
 | Tenant | Pay the rent on time | 25ט(א)(1) |
 | Tenant | Pay occupier taxes including arnona, and consumption of water, electricity, gas and heating | 25ט(א)(2)-(3). A clause moving MORE onto the tenant is void; one moving these OFF the tenant is valid |
 | Tenant | Pay ongoing house-committee maintenance, but not a capital levy | 25ט(א)(4) |
 | Tenant | Repair defects caused by their own unreasonable use | 25ח(א) |
 | Tenant | Notify the landlord of defects needing repair, which starts the 30/3-day clock | 25ח(ב) |
 
-On **entry**: there is no statutory notice period; the contract governs, so negotiate one in. On **subletting or assigning**, s.22 needs the landlord's consent, given in advance and in writing; if the landlord refuses on unreasonable grounds or sets unreasonable conditions, the tenant may proceed without it (a lease may arguably exclude this), and a court may permit the deal despite the lease. In a sublet, 25טו(ג) keeps the repair duties and the 25ט(ב) prohibitions on the head landlord.
+On **entry**: s.17 requires the tenant to let the landlord inspect the apartment and carry out repairs at any reasonable time, provided the landlord gives reasonable advance notice and keeps the disturbance as small as possible. There is no fixed number of hours or days, and s.17 is not on the 25יד list, so the lease may set different terms; check what it says. Ownership alone does not allow entry beyond that. On **subletting or assigning**, s.22 needs the landlord's consent, given in advance and in writing; if the landlord refuses on unreasonable grounds or sets unreasonable conditions, the tenant may proceed without it (a lease may arguably exclude this), and a court may permit the deal despite the lease. In a sublet, 25טו(ג) keeps the repair duties and the 25ט(ב) prohibitions on the head landlord.
 
 ### Step 6: Termination, Eviction, and Dispute Resolution
 
 | Termination Type | Hebrew | Process |
 |-----------------|--------|---------|
-| Natural expiry | סיום תקופה | Lease ends on the end date; a tenant who stays on faces a possession claim and a 25י(ג)(4) realisation. If both parties carry on without a new term, s.19(א) lets either end it on reasonable notice. Watch the 25יב option deadlines: 90 days landlord, 60 tenant |
+| Natural expiry | סיום תקופה | Lease ends on the end date; a tenant who stays on faces a possession claim and a 25י(ג)(4) realisation. If both parties carry on without a new term, s.19(א) lets either end it on reasonable notice. Watch the 25יב option deadlines: the landlord gives notice of exercising its option at least 90 days before the end, the tenant at least 60 days before; a lease may give the tenant a later deadline, which favours the tenant (25יד(2)) |
 | Mutual agreement | הסכמה הדדית | Both parties agree to end it early |
-| Under a cancellation clause | תניה לביטול | Only if the clause is valid: 25יג(א) voids a landlord-only right unless the tenant has an equivalent one. Minimum notice 90 days landlord / 60 tenant |
+| Under a cancellation clause | תניה לביטול | Only if the clause is valid: 25יג(א) voids a landlord-only right unless the tenant has an equivalent one. Notice: at least 90 days from the landlord and 60 from the tenant (25יג(ב)); a lease may ask less of the tenant, which favours the tenant (25יד(2)), but never less of the landlord |
 | Breach | הפרת חוזה | Non-payment, damage from unreasonable use, illegal use, material breach |
 
 **Eviction.** For an unprotected residential tenancy there is no "the landlord needs it for personal use" ground: that belongs to protected tenancies under the Tenant Protection Law and does not apply here. The landlord's route is expiry of the term, a valid cancellation clause, breach, or reasonable notice under s.19(א) where no term was agreed. Proceedings run as a תביעה לפינוי מושכר (תקנה 81, תקנות סדר הדין האזרחי, התשע"ט-2018): possession only, defence within 30 days, in the Magistrate Court, not small claims.
 
-**Self-help eviction is unlawful.** A landlord may not change the locks, remove the tenant's belongings, or cut off water or electricity, whatever the tenant has done and whatever the contract says: it breaches the duty of undisturbed use (s.11), and a dispossessor must restore possession (חוק המקרקעין s.19). The tenant may seek an urgent court order, and within 30 days of being dispossessed may use reasonable force to re-enter (s.18(ב)); document everything and get urgent advice.
+**Self-help eviction is unlawful.** A landlord may not change the locks, remove the tenant's belongings, or cut off water or electricity, whatever the tenant has done and whatever the contract says: it breaches the duty of undisturbed use (s.11), and a dispossessor must restore possession (חוק המקרקעין s.19). The tenant may seek an urgent court order; document the loss of possession and get urgent legal advice. Do not turn the conditional self-help provision in Land Law s.18(ב) into a blanket instruction to force entry: its application depends on the facts and statutory conditions.
 
 **Dispute resolution:**
 
@@ -165,7 +167,7 @@ On **entry**: there is no statutory notice period; the contract governs, so nego
 |--------|--------|----------|------|
 | Direct negotiation | משא ומתן ישיר | Minor disputes | Free |
 | Mediation | גישור | Moderate disputes, preserving the relationship | Low-moderate |
-| Small Claims Court | תביעות קטנות | Money claims up to the current ceiling (NIS 39,900), e.g. a withheld guarantee. Not for possession | Filing fee about 1% of the claim |
+| Small Claims Court | תביעות קטנות | Money claims up to NIS 39,900, effective 1 January 2026, e.g. a withheld guarantee. Not for possession; verify updates for later filing years | 1% of the claim, minimum NIS 50, rounded up to a multiple of NIS 5 (an exact multiple stays unchanged) |
 | Magistrate Court | בית משפט שלום | Larger claims and possession claims (פינוי מושכר) | Court fees |
 
 There is no rental tribunal for ordinary tenancies. Where a lease is EXCLUDED from the chapter by 25טו(א), the route for attacking an unfair clause is חוק החוזים האחידים, התשמ"ג-1982, not the fair-rental provisions.
@@ -189,15 +191,15 @@ The full red-flag table, with the Hebrew term and the statutory basis for each, 
 
 ### Example 2: Deposit Dispute at Lease End
 **Input:** "My landlord won't return my deposit, claims there's damage I didn't cause."
-**Output:** Under 25י(ה) the guarantee, including its fruits, is returned within 60 days of handing back the apartment or of settling debts under 25י(ג), whichever is later. Realisation is limited to the four closed 25י(ג) grounds, and "damage beyond normal wear" is not one of them: the ground is a defect the tenant was liable to repair under 25ח(א), meaning damage from UNREASONABLE use, capped at the repair cost. Before realising, 25י(ד) requires the landlord to give reasonable advance notice and a reasonable chance to put things right, so a landlord who simply cashed a cheque skipped a statutory step. Ask what ground is claimed, whether notice and a cure period were given, and compare against the move-in condition report. A money claim for the withheld sum goes to small claims if it is within the 39,900 NIS ceiling.
+**Output:** Under 25י(ה) the guarantee, including its fruits, is returned within 60 days of handing back the apartment or of settling debts under 25י(ג), whichever is later. Realisation is limited to the four closed 25י(ג) grounds, and "damage beyond normal wear" is not one of them: the ground is a defect the tenant was liable to repair under 25ח(א), meaning damage from UNREASONABLE use, capped at the repair cost. Before realising, 25י(ד) requires the landlord to give reasonable advance notice and a reasonable chance to put things right, so a landlord who simply cashed a cheque skipped a statutory step. Ask what ground is claimed, whether notice and a cure period were given, and compare against the move-in condition report. A money claim for the withheld sum can go to small claims if it is within the NIS 39,900 ceiling for 2026; verify updates for later filing years.
 
 ### Example 3: Rent Increase During Lease
 **Input:** "My landlord wants to raise my rent in the middle of the lease, can they do that?"
-**Output:** Not unless the contract contains an express mechanism, normally a CPI-linkage clause. Absent one, the rent is fixed for the term. Where there is a linkage clause, apply it as written and check for a floor clause preventing the rent falling; `scripts/rent-index-calculator.py` computes the adjustment from the CBS index. At renewal, or between terms, the landlord may propose a new figure and the tenant may negotiate or decline to renew. If an option was exercised, the extension terms are those fixed in the contract in advance (25יב(ב)).
+**Output:** Not unless the contract contains an express mechanism, normally a CPI-linkage clause. Absent one, the rent is fixed for the term. Where there is a linkage clause, apply it as written and check for a floor clause preventing the rent falling; compute the adjustment by hand from the CBS index values the clause names (base and adjustment index as the clause defines them) and show the values used. At renewal, or between terms, the landlord may propose a new figure and the tenant may negotiate or decline to renew. If an option was exercised, the extension terms are those fixed in the contract in advance (25יב(ב)).
 
 ### Example 4: Early Termination by Tenant
 **Input:** "I need to break my lease early, what are my options?"
-**Output:** Start with the contract's cancellation clause. If it lets only the LANDLORD cancel without breach, 25יג(א) makes it void unless the tenant has an equivalent right, which sometimes means the tenant has more room than the document suggests. Where a valid clause exists, the tenant's statutory minimum notice is 60 days (25יג(ב)). Otherwise propose a suitable replacement tenant: under s.22 the landlord may not refuse an assignment on unreasonable grounds, and a court may permit it despite the lease. Failing that, agree terms or accept the contractual consequences of leaving early. A penalty clause may be enforceable but is negotiable, and the guarantee may only be realised on a 25י(ג) ground.
+**Output:** Start with the contract's cancellation clause. If it lets only the LANDLORD cancel without breach, 25יג(א) makes it void unless the tenant has an equivalent right, which sometimes means the tenant has more room than the document suggests. Where a valid clause exists, the tenant gives at least 60 days' notice (25יג(ב)), unless the lease allows less, which it may because that favours the tenant (25יד(2)). Otherwise propose a suitable replacement tenant: under s.22 the landlord may not refuse an assignment on unreasonable grounds, and a court may permit it despite the lease. Failing that, agree terms or accept the contractual consequences of leaving early. A penalty clause may be enforceable but is negotiable, and the guarantee may only be realised on a 25י(ג) ground.
 
 ## Bundled Resources
 
@@ -207,26 +209,27 @@ The full red-flag table, with the Hebrew term and the statutory basis for each, 
 - `references/fair-rental-law-summary.md` -- Summary of the 2017 fair-rental amendment to the Rental and Borrowing Law, 5731-1971 (sections 25א to 25טו, commonly called Chok Schirut Hogenet) including minimum habitation standards, landlord and tenant obligations, the deposit cap, repair deadlines, termination rules, and enforcement options. Consult when a user asks about tenant rights, landlord obligations, or what the fair-rental provisions cover.
 
 ### Scripts
-- `scripts/rent-index-calculator.py` -- Calculates rent adjustment based on CPI index linking (hatzmada la'madad). Given original rent, start date, and current date, calculates the adjusted rent using historical CPI data. Run: `python scripts/rent-index-calculator.py --help`
+- `scripts/rent-index-calculator.py` is **not part of this deployment**, which is documents only, and it is unvalidated. Read from the file without running it, it relies on a bundled CPI table, chain-linked by the skill's author, that ends at 2026-09, and it takes month-of-index inputs that may not match a lease's "known index" definition. Do not use it; compute linkage by hand from CBS-published values as in Example 3.
 
 ## Gotchas
 
 - The 2017 fair-rental rules are sections 25א-25טו of the Rental and Borrowing Law, not a standalone "Fair Rental Law". Agents cite a statute that does not exist.
 - The deposit cap is NOT a flat 3 months. It is the LOWER of 3 months' rent or one-third of the lease value, so a short lease caps lower. And it reaches only guarantees that cost the tenant money: agents apply it to a promissory note or guarantors, where it does not bite, while missing that 25י(ג),(ד),(ה) DO bind a note the tenant gives.
-- Agents either forbid any deduction from rent or allow any. Section 25 makes tenancy debts set-off-able and 25יד(2) makes that non-waivable, so reasonable expenses of a repair done after the landlord missed the 25ח(ב) deadline, with s.9(ב) notice, can be set off. Withholding rent as leverage, or deducting more than reasonable expenses, is arrears: a 25י(ג)(1) realisation ground and an eviction claim.
+- Agents either forbid any deduction from rent or allow any. Section 25 makes tenancy debts set-off-able and 25יד(2) makes that non-waivable, so reasonable expenses of a repair done after the landlord missed the 25ח(ב) deadline, with reasonable advance notice under s.9(ב) (not required to be in writing since 2017, though written proof is prudent), can be set off. Deduction is not automatic. Withholding rent as leverage, or deducting more than reasonable expenses, is arrears: a 25י(ג)(1) realisation ground and an eviction claim.
 - Agents treat a family lease as excluded from the chapter. 25טו(ב) disapplies only 25יד(2), so relatives may contract out; absent that, every protection applies. The genuine 25טו(א) exclusions are listed in Step 1, and two of them carry qualifiers agents drop: the 10-year exclusion needs the landlord to have no earlier cancellation right, and the 3-month one needs no extension option.
 - Agents invent a habitability standard from plausible amenities. It is the closed six-item First Schedule, which includes a partition between the toilet and the apartment and a lockable main entrance door, and does not include a water heater.
 - Agents reduce 25ט to the broker fee. It also bars charging the tenant for buying or upgrading fixed installations, and for building insurance, the two commonest overcharges in the market.
 - Index-linked rent tracks the CPI both ways, but Israeli leases routinely add a floor clause preventing the rent falling below the base. Check for one before telling a tenant deflation will help them.
-- A shtar chov (promissory note, NOT shtar hon) is enforceable through the Execution Office without a full hearing, which is why it is riskier for a tenant than a bank guarantee. Agents apply Guarantee Law chapter 2 (s.21 fixed sum, s.27 ערב מוגן) to a lease guarantor: it binds only a creditor who lends in the ordinary course of business. Against a private landlord the guarantor has s.8 (demand on the tenant first).
-- The small claims limit (currently NIS 39,900) and the 25טו(4) rent threshold both move. Verify the current figures rather than quoting these.
+- A shtar chov (promissory note, NOT shtar hon) can be filed for execution as a bill without a prior lawsuit; the tenant's answer is a timely objection, so route an enforcement file to israeli-hotzaa-lapoal-debtor. Do not rank it against a bank guarantee by name alone (Step 3). Agents apply Guarantee Law chapter 2 (s.21 fixed sum, s.27 ערב מוגן) to a lease guarantor: it binds only a creditor who lends in the ordinary course of business. Against a private landlord the guarantor has s.8 (demand on the tenant first).
+- The small-claims ceiling and the 25טו(4) rent threshold both move. Take the current figures from the official source rather than quoting a remembered one.
 
 ## Reference Links
 
 | Source | URL | What to Check |
 |--------|-----|---------------|
 | Gov.il: Rental and Borrowing Law amendment | https://www.gov.il/he/pages/rent_law | Official page on the 2017 fair-rental amendment and its text |
-| Rental and Borrowing Law, consolidated text | https://he.wikisource.org/wiki/%D7%97%D7%95%D7%A7_%D7%94%D7%A9%D7%9B%D7%99%D7%A8%D7%95%D7%AA_%D7%95%D7%94%D7%A9%D7%90%D7%99%D7%9C%D7%94 | Full current text of the law, including chapter 25א-25טו and the Second Schedule |
+| Rental and Borrowing Law, 1971, as enacted (Sefer HaChukkim 636) | https://fs.knesset.gov.il/7/law/7_lsr_209679.PDF | Original text, including ss.9, 11, 17 and 19 |
+| 2017 fair-rental amendment (Sefer HaChukkim 2649, 19.7.2017) | https://fs.knesset.gov.il//20/law/20_lsr_389390.pdf | Chapter 25א-25טו, both Schedules, and the amendments to ss.9 and 19 |
 | Sefer HaChukkim 3510 (31.3.2026) | https://fs.knesset.gov.il/25/law/25_lsr_12846788.pdf | The 2026 amendment adding a "noten arvut acher" guarantee to section 25י, in force since 30.9.2026 |
 | Kol Zchut: Apartment renters | https://www.kolzchut.org.il/he/%D7%A9%D7%95%D7%9B%D7%A8%D7%99_%D7%93%D7%99%D7%A8%D7%95%D7%AA | Tenant rights, the deposit cap, repair of defects, eviction procedures |
 | Ministry of Construction & Housing | https://www.gov.il/en/departments/ministry_of_construction_and_housing | Housing policy and programmes |
@@ -236,7 +239,7 @@ The full red-flag table, with the Hebrew term and the statutory basis for each, 
 
 These MCP servers in the skills-il directory pair well with this skill:
 
-- **israel-statistics**: CBS price indices with a linkage calculator. Use it to compute an index-linked rent from the official CPI for months beyond the bundled table.
+- **israel-statistics**: CBS price indices. Obtain the official CPI values specified by the lease clause; if a verified CBS integration is available, use it for lookup with dates in yyyy-mm-dd format. Compute the linkage from those values as in Example 3 and show the formula and inputs. A calculator's default index month may not match the clause's base-index definition.
 - **kolzchut**: Kol Zchut, Israel's plain-language rights portal, for current guidance on tenant and landlord rights.
 
 Verify numbers against the primary source.
@@ -245,12 +248,12 @@ Verify numbers against the primary source.
 
 ### Error: "Landlord refuses to provide a written contract"
 Cause: informal arrangements, often to avoid reporting the rental income.
-Solution: 25ב requires the lease to be in writing and signed, but expressly provides that non-compliance does NOT affect the contract's validity. So do not tell a tenant in an oral lease that they have no contract: they have one, and the chapter's protections still apply. The practical problem is proof. Document everything in writing (messages, transfers, a dated condition report), request a written contract, and note that where 25ב is not complied with, 25ד reads in the Minister's model lease if one is prescribed. A draft was only circulated for comment on 2.2.2026, so check whether it has been finalised before relying on it.
+Solution: 25ב requires the lease to be in writing and signed, but expressly provides that non-compliance does NOT affect the contract's validity. So do not tell a tenant in an oral lease that they have no contract: they have one, and the chapter's protections still apply. The practical problem is proof. Document everything in writing (messages, transfers, a dated condition report), request a written contract, and note that where 25ב is not complied with, 25ד reads in the Minister's model lease if one has been prescribed. This skill has not verified whether one has; check before relying on it.
 
 ### Error: "Landlord enters the apartment without notice"
 Cause: the belief that ownership carries unlimited access.
-Solution: no statutory notice period exists, so the contract governs. But s.11 bars the landlord from disturbing the tenant's use, and repeated entry against the tenant's wishes may be trespass (הסגת גבול). Write to the landlord, keep a log, and escalate on the contract.
+Solution: s.17 allows entry to inspect or repair only at a reasonable time, after reasonable advance notice and with as little disturbance as possible, unless the lease validly sets other terms. Section 11 bars the landlord from disturbing the tenant's use, and repeated entry against the tenant's wishes may be trespass (הסגת גבול). Write to the landlord, keep a log, and rely on s.17 and the contract.
 
 ### Error: "Contract requires a shtar chov (promissory note) as guarantee"
-Cause: a promissory note can be submitted to the Execution Office and enforced without a full hearing, so landlords prefer it. (The instrument is a shtar CHOV; "shtar hon" is a different thing.)
-Solution: it is the highest-risk instrument for a tenant, and the 25י(ב) ceiling does not limit its amount. But 25י(ג) and (ד) still do apply: it may be realised only on the four closed grounds, and only after reasonable notice and a chance to cure. Negotiate for a bank guarantee, cap the note's amount in the contract, and state expressly when it may be used. Take legal advice before signing. If guarantors are asked for instead, have the deed state a fixed sum, which caps their exposure by contract.
+Cause: a promissory note can be filed for execution as a bill without a prior lawsuit (the debtor's answer is an objection within the statutory period), so landlords prefer it. (The instrument is a shtar CHOV; "shtar hon" is a different thing.)
+Solution: it can be filed for execution without a prior lawsuit, and the 25י(ב) ceiling does not limit its amount. But 25י(ג) and (ד) still do apply: it may be realised only on the four closed grounds, and only after reasonable notice and a chance to cure. Compare any alternative on the points in Step 3 rather than by name, cap the note's amount in the contract, and state expressly when it may be used. Take legal advice before signing. If guarantors are asked for instead, have the deed state a fixed sum, which caps their exposure by contract.

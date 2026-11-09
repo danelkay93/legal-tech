@@ -4,7 +4,10 @@ Section-by-section reference for the residential-tenancy chapter of חוק הש�
 (inserted by the 2017 amendment, chapter 1, siman vav), plus the guarantor rules in
 חוק הערבות, התשכ"ז-1967. Quote section numbers from here rather than paraphrasing from memory.
 
-Consolidated text: https://he.wikisource.org/wiki/חוק_השכירות_והשאילה
+Official texts (no certified consolidation was used): the 1971 Law as enacted, Sefer HaChukkim 636,
+https://fs.knesset.gov.il/7/law/7_lsr_209679.PDF; the 2017 amendment, Sefer HaChukkim 2649
+(19.7.2017), https://fs.knesset.gov.il//20/law/20_lsr_389390.pdf; and the 2026 amendment to 25י,
+Sefer HaChukkim 3510 (31.3.2026). Checked on 27-28 October 2026.
 
 ## 25ב - Form of the contract
 
@@ -38,11 +41,9 @@ treated as the contract between them; if a provision required by 25ג is missing
 did not agree otherwise, the model lease's provision on that matter is read in.
 
 Before relying on this, confirm whether such regulations have in fact been prescribed and are
-in force. If they have not, the route is unavailable and the answer changes. Status as of
-October 2026: the Minister circulated DRAFT regulations for public comment on 2.2.2026 (comments
-closed 23.2.2026), covering an extension option with CPI-linked rent and the landlord's repair
-duty. We found no publication of final regulations, so treat 25ד as not yet operative and
-re-check before relying on it.
+in force. If they have not, the route is unavailable and the answer changes. The status of any
+draft or final model-lease regulations was not verified for this reference, so treat 25ד as
+operative only after confirming a published regulation.
 
 ## 25ה / 25ו - Suitable for living, and fit for habitation
 
@@ -88,7 +89,10 @@ damage was caused by unreasonable use.
 - 9(א)(1): the tenant may repair the defect and demand REIMBURSEMENT OF REASONABLE EXPENSES.
 - 9(א)(2): the tenant may REDUCE THE RENT, for as long as the defect is unrepaired, by the
   proportion in which the value of the tenancy fell because of it.
-- 9(ב): a tenant intending to self-repair must give the landlord reasonable advance notice.
+- 9(ב): a tenant intending to self-repair must give the landlord reasonable advance notice. The
+  2017 amendment (Sefer HaChukkim 2649, s.6(3), printed p.1029) deleted the word "בכתב" (in
+  writing), so writing is not a statutory precondition; a dated written message is still the best
+  evidence, and any notice clause in the lease must be checked separately.
 - 9(ג): no notice is required where the defect is urgent.
 
 These are two different remedies. Remedy (2) is measured by lost value, not by repair cost.
@@ -184,7 +188,10 @@ make contact.
 - 25יב(ב): a LANDLORD holding an option must give notice no later than 90 days before the end of the term, and may exercise it only if the extension terms were fixed in the contract in advance, subject to those terms.
 - 25יב(ג): a TENANT holding an option must give notice no later than 60 days before the end of the term.
 
-A 90-day notice requirement on a landlord's option is the statutory minimum, not a red flag.
+A 90-day notice requirement on a landlord's option is the statutory minimum, not a red flag. On the
+tenant's side, 25יב(ג) and 25יג(ב) may be varied in the tenant's favour (25יד(2)): a lease that
+gives the tenant a later option deadline or a shorter cancellation notice is valid; one that asks
+more of the tenant is not.
 
 ## 25יג - Cancellation without cause
 
