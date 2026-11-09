@@ -2,8 +2,8 @@
 """
 Israeli Fine Appeal Deadline Calculator
 
-Calculates remaining days in the appeal window based on fine receipt date.
-Supports both parking fines (30-day window) and traffic fines (90-day window).
+Calculates 30/90-day arithmetic milestones from a supplied service date.
+These are not verified legal deadlines or a determination of remedy eligibility.
 
 Usage:
     python deadline-calculator.py --date 2026-03-15 --type parking
@@ -15,33 +15,21 @@ import argparse
 from datetime import datetime, timedelta
 import sys
 
-# Cancellation window: 30 days, applies to BOTH parking and traffic fines.
-# Court-hearing window: 90 days from receipt, also for both.
-#
-# SURCHARGE: this script deliberately reports only the DATE from which a
-# late-payment addition can start accruing, never a percentage, because the
-# rate depends on which track the fine is on and that is not knowable from a
-# date alone. On the administrative track (Administrative Traffic Violations
-# Law) it is 30% of the unpaid fine under s.10(b)(1), plus interest. On the
-# criminal track the schedule differs. Which track applies is decided by the
-# OFFENCE date, not by today's date. Direct the user to the Fines Collection
-# Center or the payment notice for the actual balance. Collection enforcement
-# is separate and typically begins only around month 12 via Hotza'a Lapoal.
+# Baseline arithmetic only. Service/deemed service, the applicable offence-date
+# regime, statutory counting, rest days and later decisions can change the
+# legal deadline. The administrative non-driver and post-decision paths are
+# not calculated here. Collection by the Fines Collection Center is not an
+# Execution Office objection route; read the actual collection notice.
 PARKING_CANCEL_DAYS = 30
 TRAFFIC_CANCEL_DAYS = 30
 COURT_HEARING_DAYS = 90
-SURCHARGE_STARTS_DAYS = 90  # a late-payment addition can accrue from this day onward
+SURCHARGE_STARTS_DAYS = 90  # legacy arithmetic milestone, NOT an accrual determination
 
-# NOTE on parking model limitation: parking fines technically share the same
-# 30/90-day windows as traffic fines, but municipal practice varies. Some
-# municipalities apply their own internal "reconsideration" timelines on top
-# of the statutory 30-day cancellation window, and surcharge schedules can
-# differ slightly per municipality. Treat this calculator's parking output as
-# a baseline; verify with the specific municipality for edge cases.
+# Verify the specific notice and current rules before advising on any track.
 
 
 def calculate_deadline(receipt_date: str, fine_type: str) -> dict:
-    """Calculate appeal and surcharge milestones for an Israeli fine."""
+    """Return arithmetic milestones only; legacy key names are not legal findings."""
     try:
         date = datetime.strptime(receipt_date, "%Y-%m-%d")
     except ValueError:
@@ -51,7 +39,7 @@ def calculate_deadline(receipt_date: str, fine_type: str) -> dict:
     today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
 
     cancel_window = PARKING_CANCEL_DAYS if fine_type == "parking" else TRAFFIC_CANCEL_DAYS
-    # All three tracks share 30/90; the labels and the available remedies differ.
+    # Baseline 30/90 arithmetic; exceptions and legal counting are not modelled.
     appeal_deadline = date + timedelta(days=cancel_window)
     court_deadline = date + timedelta(days=COURT_HEARING_DAYS)
     surcharge_deadline = date + timedelta(days=SURCHARGE_STARTS_DAYS)
@@ -61,11 +49,15 @@ def calculate_deadline(receipt_date: str, fine_type: str) -> dict:
     days_to_surcharge = (surcharge_deadline - today).days
 
     return {
+        "calculation_only": True,
         "receipt_date": date.strftime("%Y-%m-%d"),
         "fine_type": fine_type,
         "appeal_deadline": appeal_deadline.strftime("%Y-%m-%d"),
         "days_remaining_appeal": max(days_to_appeal, 0),
-        "can_appeal": days_to_appeal > 0,
+        # Legacy flag means only that the calculated 30-day date has not passed.
+        "can_appeal": days_to_appeal >= 0,
+        "on_appeal_date": days_to_appeal == 0,
+        "on_court_date": days_to_court == 0,
         # Kept for backwards compatibility with earlier CLI consumers.
         "late_payment_deadline": court_deadline.strftime("%Y-%m-%d"),
         "days_remaining_late": max(days_to_court, 0),
@@ -73,29 +65,31 @@ def calculate_deadline(receipt_date: str, fine_type: str) -> dict:
         "days_remaining_court": max(days_to_court, 0),
         "surcharge_deadline": surcharge_deadline.strftime("%Y-%m-%d"),
         "days_until_surcharge": max(days_to_surcharge, 0),
-        "surcharge_started": days_to_surcharge <= 0,
+        # Legacy flag means after the arithmetic 90-day date, not actual accrual.
+        "surcharge_started": days_to_surcharge < 0,
     }
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Calculate Israeli fine appeal deadlines"
+        description="Calculate Israeli fine 30/90-day milestones (not legal deadlines)"
     )
     parser.add_argument(
         "--date",
         required=True,
-        help="Date fine was received (YYYY-MM-DD)",
+        help="Supplied service date (YYYY-MM-DD); verify receipt/deemed service separately",
     )
     parser.add_argument(
         "--type",
         required=True,
         choices=["parking", "traffic", "administrative"],
         help=(
-            "parking (municipal) or traffic (police/camera) = criminal track: 30-day "
-            "bakasha le-bitul, 90-day bakasha le-hishafet. administrative = Administrative "
+            "parking or traffic: use only for a notice on the criminal track; baseline "
+            "30-day bakasha le-bitul, 90-day bakasha le-hishafet. administrative = Administrative "
             "Traffic Violations Law track: 30-day hasagah (90 if you were not the driver), "
             "90-day arar to the traffic tribunal, and NO request to be tried. Which track "
-            "applies is decided by the OFFENCE date, not today's date."
+            "applies must be checked against the OFFENCE date and current rules. "
+            "This helper does not calculate exceptions or statutory counting rules."
         ),
     )
 
@@ -110,34 +104,36 @@ def main():
     admin = result["fine_type"] == "administrative"
 
     print(f"\n{'='*50}")
-    print(f"  {fine_label} Appeal Deadline Calculator")
+    print(f"  {fine_label} Arithmetic Milestones")
     print(f"{'='*50}")
     print(f"  Receipt date:           {result['receipt_date']}")
     if admin:
         print(f"  Hasagah window:         30 days (90 if you were not the driver, s.8(a))")
-        print(f"  Hasagah deadline:       {result['appeal_deadline']}")
-        print(f"  Arar deadline:          {result['court_hearing_deadline']} (to the traffic tribunal, 90 days, s.19(b))")
-        print(f"                          or 30 days from the decision on the hasagah")
+        print(f"  30-day arithmetic date: {result['appeal_deadline']}")
+        print(f"  90-day arithmetic date: {result['court_hearing_deadline']}")
+        print(f"  Not calculated:         non-driver or post-hasagah-decision deadlines")
         print(f"  Note:                   there is NO bakasha le-hishafet on this track")
     else:
         print(f"  Cancellation window:    30 days (bakasha le-bitul)")
-        print(f"  Cancellation deadline:  {result['appeal_deadline']}")
-        print(f"  Court-hearing deadline: {result['court_hearing_deadline']} (bakasha le-hishafet, 90 days)")
-    print(f"  Late-payment addition:  can start {result['surcharge_deadline']} (rate depends on track)")
+        print(f"  30-day arithmetic date: {result['appeal_deadline']}")
+        print(f"  90-day arithmetic date: {result['court_hearing_deadline']}")
 
-    if result["can_appeal"]:
-        label = "HASAGAH" if admin else "CANCELLATION"
-        print(f"  Status:                 WITHIN 30-DAY {label} WINDOW")
-        print(f"  Days remaining:         {result['days_remaining_appeal']} days")
+    if result["on_appeal_date"]:
+        print("  Status:                 CALCULATED 30-DAY DATE IS TODAY; CHECK URGENTLY")
+    elif result["can_appeal"]:
+        print(f"  Days to calculated 30-day date: {result['days_remaining_appeal']}")
+    elif result["on_court_date"]:
+        print("  Status:                 CALCULATED 90-DAY DATE IS TODAY; CHECK URGENTLY")
     elif not result["surcharge_started"]:
-        first = "HASAGAH" if admin else "CANCELLATION"
-        second = "arar" if admin else "court request"
-        print(f"  Status:                 {first} WINDOW EXPIRED, {second} window still open")
-        print(f"  Days to {second:<15}{result['days_remaining_court']} days")
+        print("  Status:                 AFTER CALCULATED 30-DAY DATE, BEFORE 90-DAY DATE")
+        print(f"  Days to calculated 90-day date: {result['days_remaining_court']}")
     else:
-        print(f"  Status:                 LATE-PAYMENT ADDITION MAY HAVE STARTED")
-        print(f"  Action:                 Check the real balance with the Fines Collection Center,")
-        print(f"                          or document a justified-delay exception.")
+        print("  Status:                 AFTER CALCULATED 90-DAY DATE; CHECK AVAILABLE REMEDIES")
+
+    print("  Verify: service/deemed service, offence-date regime, counting and rest-day")
+    print("          rules, later decisions and possible extensions before relying on a date.")
+    print("  Arithmetic does not establish the statutory last day or surcharge accrual.")
+    print("  Check the payment date and balance with the authority named on the notice.")
 
     print(f"{'='*50}\n")
 
