@@ -1,24 +1,24 @@
 # Domain checklist: israeli-hotzaa-lapoal-debtor
 
-Version 2, drafted 2026-09-13 (first checklist for this skill). Statute references are to חוק ההוצאה לפועל, התשכ"ז-1967 unless stated.
+Version 2, drafted 2026-09-13 (first checklist for this skill); sources corrected 2026-10-28 (items 2, 3, 5, 7 and 15, and Authoritative sources). Statute references are to חוק ההוצאה לפועל, התשכ"ז-1967 unless stated.
 
 ## Must cover (core)
 
 1. Identify file type (bill, fixed sum, money judgment, maintenance, performance of act) and the challenge route for each. Source: ss.81א, 81א1, 19, 74.
-2. Service of the azhara as the anchor for every clock, and defective service as an argument. Source: s.7, s.81א(ג1), s.81א1(ה).
-3. Objection within 30 days (bill and fixed-sum files), automatic stay when timely, late-objection package. Source: s.81א(ג),(ג1); s.81א1(ד); Kol Zchut התנגדות לביצוע שטר בהוצאה לפועל.
+2. Service of the azhara as the anchor for every clock, and defective service as an argument; filing any request counts as full service that day. Source: s.7(ב)-(ד), including s.7(ג1); s.81א(ג1); s.81א1(ה).
+3. Objection within 30 days (bill and fixed-sum files), automatic stay when timely, late-objection package; in court the defendant may defend only if the court accepts the objection. Source: s.81א(ג),(ג1); s.81א1(ד); תקנות סדר הדין האזרחי, התשע"ט-2018, reg. 20 (reg. 20(א) as replaced in ק"ת 11780, 2.3.2025); Kol Zchut התנגדות לביצוע שטר בהוצאה לפועל.
 4. Fixed-sum technical grounds: over 75,000 NIS on filing date, not a fixed sum, no prior 30-day התראה. Source: s.81א1(א),(ב1),(ג).
-5. Paraati claim (form 236), no deadline, post-judgment only on judgment files, special-costs risk, stay requires special reasons and usually security. Source: s.19; Kol Zchut טענת "פרעתי".
+5. Paraati claim (form 236): payment and other discharge grounds only, not a substitute for a late objection; no filing deadline; post-judgment only on judgment files; special-costs risk; stay requires special recorded reasons and usually security; the ability-examination duty is suspended while it is pending and counted again from a rejection. Source: s.19; s.67(א1)(2); Kol Zchut טענת "פרעתי".
 6. Setting aside a default judgment in the originating court as the route to attack the judgment itself. Source: תקנות סדר הדין האזרחי, התשע"ט-2018, reg. 130; Kol Zchut בקשה לביטול פסק דין שניתן בהיעדר הגנה.
-7. Payment-order request within 20 days (or the date set in the azhara), required declaration and confidentiality waiver, period caps (3 or 4 years plus up to 3), right to vary. Source: ss.7א, 7א1, 69ב.
+7. Payment-order request within 20 days or the date set in the azhara (a fixed-sum azhara may set 30; check it), required declaration and confidentiality waiver, period caps (3 or 4 years plus up to 3), right to vary. Source: ss.7(א), 7א(א), 7א1, 7א2, 69ב.
 8. Status: חייב בעל יכולת המשתמט and what triggers it (not filing, not appearing). Source: ss.7ג, 66ב(א)(3).
-9. Status: חייב מוגבל באמצעים, its spread thresholds (2/3/4 years), interim order, automatic consolidation, restrictions, public register. Source: ss.69ג to 69ח.
-10. All five restrictions under s.66א (passport, exit, לקוח מוגבל מיוחד, debit cards, corporation), the health exception, the preconditions in s.66ב, and the 30-day warning before a restriction takes effect. Source: ss.66א, 66ב, 66ג.
+9. Status: חייב מוגבל באמצעים is closed to new declarations from the Insolvency Law's commencement (15.9.2019); its spread thresholds (2/3/4 years), interim order, automatic consolidation, restrictions and public register matter only for a declaration made before then. Source: s.69י1; ss.69ג to 69ח.
+10. All five restrictions under s.66א (passport, exit, לקוח מוגבל מיוחד, charge/credit cards, corporation; s.66א1 excludes immediate-debit cards usable only against a credit balance and benefit-only cards), the health exception, the preconditions in s.66ב, and the 30-day warning before a restriction takes effect. Source: ss.66א, 66ב, 66ג.
 11. Cancelling a restriction: automatic on payment, on request with possible security, per file, immediate re-imposition on lapse, leave to appeal. Source: s.66ד; Kol Zchut בקשה לביטול הגבלה שהטיל רשם ההוצאה לפועל.
 12. Bank-account attachment: how to request release, protected wages for one month after deposit, unattachable National Insurance benefits, debit-only and benefit cards exempt from card restriction. Source: חוק הגנת השכר s.8; חוק הביטוח הלאומי s.303; s.66א1; Kol Zchut עיקול חשבון בנק בהוצאה לפועל.
 13. Protected wage table for the current year with the 80% of net rule and the maintenance exception. Source: Kol Zchut שכר עבודה שלא ניתן לעקל או לשעבד.
 14. Maintenance track: no s.7א payment order, no limited-means status, arrest up to 21 days without ability examination after a 7-day warning, installment of past maintenance debt conditioned on two months of current payments. Source: ss.74, 69א(ב), 69ב1; Kol Zchut מאסר חייב בתיק מזונות.
-15. Deadline calendar covering all clocks: objection 30, payment order 20 (or as set), ability examination / paraati exemption 21, restriction warning 30, evader-register invitation. Source: ss.81א(ג1), 7א, 19, 66ג, 66ה.
+15. Hand-checked date list covering all clocks: objection 30; payment order 20 or the date set in the azhara; ability examination 21 or the date set in the azhara (suspended by a paraati claim or bill objection); restriction warning 30; arrest warning 7; evader-register invitation. Every date is a provisional planning calculation: Interpretation Law s.10, procedure-specific recess and emergency rules, valid service, and a printed date reconciled with the statute. No bundled script. Source: ss.7, 7א, 19, 66ג, 66ה, 67(א1), 74(ג), 81א(ג1), 81א1(ד); חוק הפרשנות, התשמ"א-1981, s.10.
 16. Routing out to insolvency when the user wants debts discharged, with the current index-linked threshold read from source. Source: חוק חדלות פירעון ושיקום כלכלי, התשע"ח-2018; Kol Zchut חדלות פירעון ושיקום כלכלי לחובות בסכום נמוך.
 
 ## Should cover (advanced)
@@ -40,11 +40,14 @@ Version 2, drafted 2026-09-13 (first checklist for this skill). Statute referenc
 - Performance-of-act files, eviction and delivery of property. Rationale, 2026-09-13: separate procedure (ss.62 onward) with different stakes and urgency; a housing-loss case needs a lawyer, not a checklist.
 - Insolvency proceedings themselves (application, trustee, discharge plan). Rationale, 2026-09-13: different forum under חוק חדלות פירעון ושיקום כלכלי; this skill only routes out.
 - Traffic, parking and municipal fines collected by מרכז לגביית קנסות, אגרות והוצאות or by administrative collection under פקודת המסים (גבייה). Rationale, 2026-09-13: not a registrar file, different challenge routes and bodies.
-- Small claims and any civil claim before judgment. Rationale, 2026-09-13: there is no enforcement file yet; defence belongs to the court procedure.
+- Small claims and any other court claim with no enforcement file yet. Defence belongs to the court procedure. Bill or cheque files and fixed-sum claims opened at the Execution Office are in scope even without a judgment (SKILL.md Step 1).
 
 ## Authoritative sources
 
-- חוק ההוצאה לפועל, התשכ"ז-1967, consolidated: https://he.wikisource.org/wiki/חוק_ההוצאה_לפועל and Nevo / Knesset reshumot.
+- חוק ההוצאה לפועל, התשכ"ז-1967: consolidated text hosted by the National Insurance Institute, https://www.btl.gov.il/Laws1/00_0063_000000.pdf (amendment notes to 2025; not certified current), checked against Knesset and Reshumot publications. Wikimedia texts are not used as evidence.
+- חוק הפרשנות, התשמ"א-1981, s.10 (counting periods).
+- תקנות סדר הדין האזרחי, התשע"ט-2018, reg. 20 (reg. 20(א) as replaced in ק"ת 11780, 2.3.2025).
+- תקנות ההוצאה לפועל (פגרות), התשע"א-2010 (not yet read; see verified-facts.md, Still to verify).
 - תקנות ההוצאה לפועל, התש"ם-1979.
 - כללי ההוצאה לפועל (הוראות לתשלום חובות פסוקים), התשע"ד-2014.
 - חוק הגנת השכר, התשי"ח-1958, s.8.
