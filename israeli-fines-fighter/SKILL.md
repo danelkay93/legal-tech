@@ -15,7 +15,7 @@ Any text this tool drafts is an automatic draft for your personal preparation on
 
 ## Problem
 
-Getting fined in Israel is stressful and confusing. Parking tickets arrive with cryptic violation codes, traffic fines carry penalty points that accumulate toward license suspension, and there are TWO different appeal windows running in parallel for both fine types: a **30-day cancellation request (bakasha le-bitul)** to the prosecutor or municipality, and a **90-day court-hearing request (bakasha le-hishafet)** OR 30 days from the rejection of a cancellation request. Once the payment date passes without payment or an appeal, a statutory late-payment addition (tosefet pigur) plus interest starts accruing on the fine. This skill helps users hit both windows, decide whether to appeal, and generate a proper Hebrew appeal letter with the right legal grounds.
+Getting fined in Israel is stressful and confusing. Parking tickets arrive with cryptic violation codes, traffic fines carry penalty points that accumulate toward license suspension, and for notices on the criminal fixed-penalty track there are two separate request windows: a **30-day cancellation request (bakasha le-bitul)** to the prosecutor or municipality, and a **90-day court-hearing request (bakasha le-hishafet)** OR 30 days from the rejection of a cancellation request. Once the payment date passes without payment or an appeal, a statutory late-payment addition (tosefet pigur) plus interest starts accruing on the fine. This skill helps users hit both windows, decide whether to appeal, and generate a proper Hebrew appeal letter with the right legal grounds.
 
 ## Instructions
 
@@ -39,7 +39,7 @@ Key details to collect:
 
 ### Step 2: Assess the Deadline
 
-There are TWO appeal mechanisms with separate deadlines, applicable to BOTH parking fines and traffic fines:
+For parking and traffic notices on the criminal fixed-penalty track, distinguish these two mechanisms. Check Step 5 for the separate administrative branch before using this table:
 
 | Window | Mechanism | Hebrew | Submitted To |
 |---|---|---|---|
@@ -51,12 +51,14 @@ Once the payment date on the notice passes without payment or an appeal, a statu
 | Timeline | Status | Action |
 |----------|--------|--------|
 | **Day 0-30** | Both windows open | Best time to file בקשה לביטול. Some municipalities offer an early-payment discount in this window. Whether one exists, and how much it is, is set per municipality, so check the notice or the municipality's own page rather than assuming a rate. |
-| **Day 31-90** | Cancellation window closed; court-hearing window still open | File בקשה להישפט before day 90, OR if a בקשה לביטול was rejected, file court request within 30 days of the rejection. |
-| **Day 90+** | Both standard windows closed; late-payment additions accrue | A late request is considered only where the delay itself is justified and documented (for example hospitalization, active reserve service, or being abroad). Otherwise enforcement via Hotza'a Lapo'al, vehicle-registration block (ikuv rishum), additional fees. |
+| **Day 31-90 (baseline calculation)** | Check the court-request deadline and any later decision | Submit בקשה להישפט by the verified legal deadline. A rejection of a cancellation request may start a separate 30-day period; verify the decision's service and applicable rules. |
+| **After the calculated 90-day date** | Verify the actual deadline, payment status and available late remedies | Check the competent authority and procedure on the notice. Collection may include additions and enforcement; do not route a Fines Collection Center notice to an Execution Office objection. |
 
-**For parking fines:** the 30-day clock starts from the date the ticket was placed on the vehicle OR the date a notice was mailed to the registered owner.
+**For parking fines:** identify legally effective service: placement on the vehicle, or actual/deemed receipt of a mailed notice under the applicable rules. Mailing date alone is not receipt. Record how and when service occurred; do not guess deemed service.
 
-**For traffic fines (breirot mishpat):** by default the fine becomes a court conviction at day 90 if no בקשה להישפט was filed.
+The table and helper supply baseline 30/90-day arithmetic for the applicable criminal track. They do not establish a statutory last day: check service, counting/rest-day rules, the notice and any later decision. The administrative track has separate remedies and exceptions (Step 5). On the calculated date itself, treat the matter as urgent, not automatically expired.
+
+**For criminal fixed-penalty traffic fines:** expiry of the applicable periods can result in deemed conviction under s.229. Do not infer that result from reaching the helper's calculated day 90; check payment, requests, decisions and the legal counting rules.
 
 ### Step 3: Evaluate Appeal Grounds
 
@@ -152,7 +154,7 @@ Traffic fine appeals go to the prosecution or court. The letter structure differ
 | Municipality | Online route |
 |-------------|--------------|
 | Tel Aviv-Yafo | `tel-aviv.gov.il`. The objection form covering BOTH parking and nat"z is at `www5.tel-aviv.gov.il/TlvFormCollection/Parking/ObjectionReport/` (verified 2026-08-13). |
-| Jerusalem | `jerusalem.muni.il` (bot-blocked to scripted clients; loads in a browser). |
+| Jerusalem | `jerusalem.muni.il`. If automated access is denied, stop and report the limitation; ask the user to supply the relevant text or use another authorized official source. |
 | Haifa | `haifa.muni.il` (verified 2026-08-13). |
 | Any other municipality | Use the address and channel printed ON THE TICKET, or the municipality's own site. |
 
@@ -297,9 +299,9 @@ below.
 
 ## Gotchas
 
-1. **Municipal vs. police fines are different legal regimes.** Parking tickets from a municipal inspector (paqach) follow the municipal objection route (bakasha le-bitul to the municipality, and a request to be tried if it is rejected); the online traffic tribunal has no jurisdiction over municipal parking tickets. Traffic fines from police or cameras are **breirot mishpat** on the criminal-procedure track. The 30-day / 90-day mechanics in Step 2 mirror each other in practice, but the two tracks rest on different statutes, so a parking case that reaches court goes to the administrative-affairs track, not the traffic court. Mixing up the appeal route wastes the deadline.
+1. **Identify the offence and its applicable track.** For a municipal parking notice on the criminal fixed-penalty track, cancellation is requested from the municipality and a request to be tried follows the Criminal Procedure Law route, generally to the local-affairs court (בית משפט לעניינים מקומיים), not an administrative-affairs appeal. Administrative traffic violations have the separate hasagah/arar route described in Step 5. A municipal issuer or camera alone does not establish the track; check the offence date, notice and current official procedure before naming the forum.
 
-2. **The 30-day and 90-day deadlines are from receipt date, not violation date.** For mailed notices, receipt date is presumed to be a few days after mailing. If the user says "I got a fine from 2 months ago," clarify when they actually received the notice.
+2. **Identify service separately from the offence date.** Receipt or deemed service under the applicable rules can start the clock; do not assume receipt a few days after mailing. Ask for the notice, envelope and actual receipt date. The offence date separately determines which legal regime applies.
 
 3. **Owner liability (achrayut ba'alim) is the default for camera fines.** The registered vehicle owner receives camera fines regardless of who was driving. The owner can transfer liability by submitting a statutory declaration (tatzir) naming the actual driver within 90 days.
 
@@ -307,7 +309,7 @@ below.
 
 5. **Appeals are municipality-specific.** Each Israeli municipality has its own appeal form, portal, and process. Do not assume Tel Aviv's process works for Jerusalem or Haifa. Always direct the user to their specific municipality's website.
 
-6. **Hotza'a Lapoal (collection enforcement) typically triggers after roughly 12 months unpaid**, when the Centre for Collection of Fines (Merkaz Geviya / CEC, part of the Ministry of Justice) opens an execution file. Once that happens, ignoring the file leads to bank-account / wage seizure, license suspension, and travel block. To oppose execution, file a **התנגדות לביצוע (objection to execution)** within 30 days of being served. To negotiate, contact the CEC directly to set up a payment plan (haseder tashlumim). At this stage the original cancellation / court-hearing windows are closed; only "justified-delay" exceptions (איחור מוצדק) can reopen the underlying fine.
+6. **Fines Collection Center collection is not an Execution Office file.** Do not tell the user to file a 30-day התנגדות לביצוע against a Center notice, and do not assume collection starts after 12 months. Read the issuing/collecting authority and the procedure on the notice. Ask that authority about available payment arrangements, deferral and relief from additions. Challenging the underlying fine is a separate question: check the applicable criminal or administrative route and any available late remedy. The current municipal collection arrangements and full range of remedies have not been verified here; do not assume municipal opt-in rules or that a single remedy is exclusive.
 
 7. **Court fees (agra):** filing a בקשה להישפט or a בקשה לביטול itself does not carry an agra (filing is free). An agra applies only at the ercaa stage if you appeal a conviction. Exact 2026 amounts vary; check `court.gov.il` for current rates rather than quoting a number.
 
@@ -329,9 +331,9 @@ User received a 250 NIS parking ticket yesterday for parking near a red-and-whit
 
 | Link | What it is |
 |---|---|
-| gov.il/he/service/drivers_inquiries_forms | Israel Police, national Driver Inquiries Center (מפנ"א) request service. Verified 2026-08-13. Shows 403 to scripted clients; loads normally in a browser. |
+| gov.il/he/service/drivers_inquiries_forms | Israel Police, national Driver Inquiries Center (מפנ"א) request service. Historical check: 2026-08-13. Stop and report an access denial; do not switch clients to evade it. |
 | gov.il/he/service/police_fine_payment | Police fine payment service. Same WAF behaviour as above. |
-| www.court.gov.il | Israeli courts directory (find your local traffic court / שלום מקומי court). Use the `www.` host; the bare `court.gov.il` does not resolve cleanly. Verified 2026-08-13: the host resets scripted connections and did not load in a headless browser either, so treat it as human-browser-only and do not report it as down to the user without checking yourself. |
+| www.court.gov.il | Israeli courts directory. Historical automated access failed on 2026-08-13; this does not establish a current outage. If access fails, report that limitation, use another authorized official source or ask the user for the relevant text. Do not switch clients to evade a denial. |
 | gov.il (search "משרד התחבורה") | Ministry of Transport content now lives under gov.il; the legacy `mot.gov.il` host is deprecated. |
 | kolzchut.org.il (search "שיטת הניקוד בעבירות תנועה") | Canonical citizens-rights write-up of the penalty-point scheme. |
 | nevo.co.il (search "פקודת התעבורה") | Free public mirror of the Traffic Ordinance and Criminal Procedure (Traffic Offences) regulations. |
@@ -345,7 +347,7 @@ User received a 250 NIS parking ticket yesterday for parking near a red-and-whit
 
 ### scripts/
 
-- `deadline-calculator.py` -- Calculate remaining days in appeal window based on fine date
+- `deadline-calculator.py` -- Calculate baseline 30/90-day dates from a supplied service date. Outputs are arithmetic only, including legacy dictionary keys; they do not determine the statutory last day, eligibility to appeal or surcharge accrual.
 
 ## Troubleshooting
 
@@ -355,7 +357,7 @@ The "fine doubles after 30 days" framing is incorrect. The rule depends on which
 
 - **Administrative track** (Administrative Traffic Violations Law): the late-payment addition (tosefet pigur) is **30% of the unpaid fine**, a single addition, per s.10(b)(1), plus shekel interest and late-payment charges under s.10(b)(2). It attaches after the payment date in s.8(c) / 9(a) / 19(d), not at day 30.
 - **Criminal track** (breirot mishpat not moved across): additions under s.229(b) CPL and s.67 of the Penal Law, with a written waiver request under s.229(f)-(g). Details in `references/fine-types.md`.
-- Either way: possible collection fees, vehicle-registration block (ikuv rishum), and enforcement via Hotza'a Lapo'al.
+- Collection consequences and the competent authority depend on the notice and applicable law. A Fines Collection Center notice is not an Execution Office objection route (Gotcha 6).
 
 **Waiver of the surcharge on municipal fines (worth asking for, and widely unknown).** For a fine imposed by a municipal inspector under s.28 (this includes nat"z camera fines), s.10(c) lets the competent authority exempt the person from the late-payment addition, in whole or in part, where the failure to pay on time was for a reason beyond their control, or where the surcharge arose from a malfunction of a state or municipal authority. The request must be in writing (s.10(d)).
 
@@ -367,11 +369,7 @@ After the windows close, a late request to be tried is still possible in limited
 The vehicle owner must submit a statutory declaration (tatzir) identifying the actual driver. This transfers liability. The declaration must be submitted within 90 days and include the other driver's full name and ID number.
 
 ### "I want to go to court over a parking fine"
-A municipal parking ticket is a **breirat kenas under the Criminal Procedure Law**, not an
-administrative-affairs matter. The first step is a בקשה לביטול to the municipality. If that is
-rejected, the next step is a **בקשה להישפט**, which moves the case to בית משפט לעניינים מקומיים as a
-criminal-procedure hearing. It is NOT an erur minhali to an administrative-affairs court. For small fines this is often not cost-effective, but the route
-is the one above.
+For a municipal parking notice on the criminal fixed-penalty track, the cancellation request goes to the municipality and a בקשה להישפט follows the Criminal Procedure Law route, generally to בית משפט לעניינים מקומיים. Do not label it an administrative-affairs appeal. Confirm the track, service, deadlines and named forum from the notice/current official procedure; administrative traffic violations use the separate Step 5 branch.
 
 ### "How much does a traffic lawyer cost?"
 Traffic-lawyer fees are not published and vary widely by severity and by firm, so get a quote before deciding rather than working from a figure. The decision rule matters more than the price: for a low-value fine carrying few or no points, self-representation is usually the better trade, while a fine carrying 10 points, or any real risk of licence suspension, is where representation starts to pay for itself.

@@ -6,53 +6,46 @@ Parking fines are issued by municipal inspectors (paqchim) and processed by the 
 
 ### Common Parking Violations
 
-| Violation | Hebrew | Typical Fine Range (NIS) |
-|-----------|--------|--------------------------|
-| Expired meter / no payment | חניה ללא תשלום | 100-250 |
-| No-parking zone (red-white curb) | חניה במקום אסור | 250-500 |
-| Handicap spot (unauthorized) | חניה בחניית נכים | 500 |
-| Stopping/parking in a bus lane or at a bus stop | עצירה או חניה בנתיב תחבורה ציבורית | 250-500 |
-| Blocking entrance/exit | חסימת כניסה/יציאה | 500-1,000 |
-| Double parking | חניה כפולה | 250-500 |
-| Sidewalk parking | חניה על מדרכה | 250-500 |
-| Fire hydrant zone | חניה ליד ברז כיבוי | 250-500 |
-| Crosswalk obstruction | חסימת מעבר חצייה | 250-500 |
+| Violation | Hebrew |
+|-----------|--------|
+| Expired meter / no payment | חניה ללא תשלום |
+| No-parking zone (red-white curb) | חניה במקום אסור |
+| Handicap spot (unauthorized) | חניה בחניית נכים |
+| Stopping/parking in a bus lane or at a bus stop | עצירה או חניה בנתיב תחבורה ציבורית |
+| Blocking entrance/exit | חסימת כניסה/יציאה |
+| Double parking | חניה כפולה |
+| Sidewalk parking | חניה על מדרכה |
+| Fire hydrant zone | חניה ליד ברז כיבוי |
+| Crosswalk obstruction | חסימת מעבר חצייה |
 
 > **Do not confuse this row with driving in a bus lane.** *Stopping or parking* in a
 > public-transport lane is the parking offence above. *Driving* in one (נת"צ) is a separate
-> offence: failure to obey signs 501/503 under Traffic Regulation 22(a), fine 500 NIS
-> (First Schedule item 24), usually enforced by a municipal camera under Traffic Ordinance
-> s.27A1, and handled on the administrative track (hasagah then arar, no request to be tried).
-> See the nat"z table in SKILL.md Step 5.
+> offence: failure to obey signs 501/503 under Traffic Regulation 22(a). See the dated
+> nat"z branch in SKILL.md Step 5 and verify the offence date, notice and current rules
+> before selecting its administrative or criminal remedy.
 
 Note: Exact amounts depend on the municipality and are updated periodically. Always check the actual fine notice for the authoritative amount.
 
 ## Traffic Fines (דוחות תנועה / ברירות משפט)
 
-Traffic fines are issued by the Israel Police and are classified as "breirot mishpat" (fixed penalties) under the Criminal Procedure Law.
+Traffic notices may follow the criminal fixed-penalty or administrative traffic-violation track. Select the track from the offence date, notice and current official rules, not the issuer alone (SKILL.md Step 5).
 
 ### Speed Violations
 
-| Speed Over Limit | Urban Road (NIS) | Non-Urban Road (NIS) | Points |
-|-----------------|------------------|---------------------|--------|
-| Up to 10 km/h | Usually not fined | Usually not fined | 0 |
-| 11-20 km/h (urban) / 11-25 km/h (non-urban) | 250 | 250 | 0 |
-| 21-30 km/h (urban) / 26-40 km/h (non-urban) | 750 | 750 | 8 |
-| 31-40 km/h (urban) / 41-50 km/h (non-urban) | 1,500 | 1,500 | 10 |
-| 40+ km/h (urban) / 50+ km/h (non-urban) | Court summons | Court summons | 10+ |
+Use the specific offence code and road category. The SKILL.md points table lists urban speeding 21-30 km/h over the limit as 8 points and 31-40 km/h as 10; do not extrapolate other bands or fine amounts. Verify against the [Ministry of Transport offence-code table](https://data.gov.il/he/datasets/ministry_of_transport/tavlat-simlei-averot) for the offence date.
 
 ### Other Common Traffic Violations
 
-| Violation | Hebrew | Fine (NIS) | Points |
-|-----------|--------|-----------|--------|
-| Running red light | מעבר באור אדום | 1,000 | 10 |
-| Mobile phone use while driving | שימוש בטלפון נייד | 1,000 | 8 (offence before 20.8.2026), 10 (from 20.8.2026) |
-| Not wearing seatbelt (driver) | נהג שאינו חגור בחגורת בטיחות | 250 | 6 |
-| Not wearing seatbelt (passenger) | נוסע שאינו חגור בחגורת בטיחות | 250 | 4 |
-| Illegal U-turn | פניית פרסה אסורה | 250 | 4 |
-| Illegal overtaking | עקיפה אסורה | 500-1,000 | 6-8 |
-| Driving without license on person | נהיגה ללא רישיון נהיגה | 100 | 0 |
-| Failing to stop at stop sign (302/304, non-stopping only) | אי ציות לתמרורים 302, 304 באי־עצירה בלבד | 250 | 6 |
+| Violation | Hebrew | Points |
+|-----------|--------|--------|
+| Running red light | מעבר באור אדום | 10 |
+| Mobile phone use while driving | שימוש בטלפון נייד | 8 (offence before 20.8.2026), 10 (from 20.8.2026) |
+| Not wearing seatbelt (driver) | נהג שאינו חגור בחגורת בטיחות | 6 |
+| Not wearing seatbelt (passenger) | נוסע שאינו חגור בחגורת בטיחות | 2 |
+| Illegal U-turn | פניית פרסה אסורה | 4 |
+| Illegal overtaking | עקיפה אסורה | 4-10, depending on the specific offence |
+| Driving without license on person | נהיגה ללא רישיון נהיגה | 0 |
+| Failing to stop at stop sign (302/304, non-stopping only) | אי ציות לתמרורים 302, 304 באי־עצירה בלבד | 6 |
 
 ### Payment Channels
 
@@ -62,7 +55,7 @@ Traffic fines are issued by the Israel Police and are classified as "breirot mis
 | Post Office (doar) | Any Israel Post branch, cash or credit card |
 | Bank transfer | Via designated bank account (see fine notice) |
 
-Note: Fine amounts shown are approximate as of early 2026. Amounts are updated periodically by ministerial order. Always verify on the official fine notice or gov.il.
+Fine amounts are deliberately omitted from these lookup tables. Read the amount on the actual notice and verify the applicable order if disputed. Point values are aligned with SKILL.md; use the Ministry of Transport offence-code table and offence date before assessing suspension risk. This alignment is not a fresh verification of every current code.
 
 ### Late-payment additions on the criminal track, and late requests to be tried
 
