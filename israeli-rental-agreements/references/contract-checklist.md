@@ -52,7 +52,7 @@ A detailed checklist of every clause to verify in an Israeli residential rental 
 | Start date | תאריך התחלה | Exact date you receive keys | Gap between payment start and key handover |
 | End date | תאריך סיום | Exact date, typically 12 months later | Ambiguous end date |
 | Option clause (optzia) | אופציה | Terms for renewal, rent for option period | No option, or option with undefined rent |
-| Option exercise deadline | מועד אחרון להפעלת אופציה | When you must notify the landlord. Note 25יב sets statutory minimums: a landlord's option needs 90 days' notice, a tenant's 60 | A deadline EARLIER than the statutory minimum, or terms not fixed in advance for a landlord's option |
+| Option exercise deadline | מועד אחרון להפעלת אופציה | When you must notify the landlord. 25יב: a landlord exercising its option gives notice at least 90 days before the end; a tenant exercising an option gives notice at least 60 days before the end, and a lease may give the tenant a later deadline because that favours the tenant (25יד(2)) | A tenant deadline EARLIER than 60 days before the end, a landlord notice shorter than 90 days, or terms not fixed in advance for a landlord's option |
 | Handover date | מועד מסירה | Date and time for key exchange | No specific handover arrangement |
 
 ### Common Pitfalls in Lease Terms
@@ -88,7 +88,7 @@ A detailed checklist of every clause to verify in an Israeli residential rental 
 1. **Always get a signed receipt** (kabala, קבלה) listing the exact amount and date
 2. **Photograph the apartment** on move-in day with timestamps. Send photos to the landlord by email for a documented record
 3. **Create a property condition report** (protokol matzav dira, פרוטוקול מצב דירה) and annex it to the contract (nispach, נספח)
-4. **For bank guarantees**: ensure the guarantee document specifies the same conditions as the contract for releasing funds
+4. **For bank guarantees**: ensure the guarantee document specifies the same conditions as the contract for releasing funds, and check whether it is payable on the landlord's first written demand, which lets the bank pay before any dispute is decided
 5. **For personal guarantors**: have the deed state a fixed sum, which caps their exposure by contract. Against a private landlord, Guarantee Law chapter 2 (s.21, s.27) does not apply, so the contract is what protects them
 6. **Never agree to a shtar chov** without consulting a lawyer. A shtar chov can be enforced as debt through the Execution Office without a court hearing
 
@@ -106,7 +106,7 @@ A detailed checklist of every clause to verify in an Israeli residential rental 
 ### Fair-Rental Provision Requirements
 
 Under the 2017 fair-rental provisions (commonly called Chok Schirut Hogenet, חוק שכירות הוגנת, formally sections 25א to 25טו of the Rental and Borrowing Law, 5731-1971):
-- The **landlord** must repair a non-minor defect within 30 days of the tenant's request, and an urgent defect within 3 days. If the deadline is missed, section 25ח(ג) applies s.9(א): repair and claim reimbursement of reasonable expenses (keep receipts, and give reasonable notice first under s.9(ב) unless the defect is urgent), or reduce the rent in proportion to the lost value. Reasonable expenses so incurred may be set off against rent (s.25, non-waivable under 25יד(2)); withholding rent without that procedure is arrears
+- The **landlord** must repair a non-minor defect within a reasonable time and no later than 30 days after the tenant's request; an urgent defect must be repaired within a reasonable time and no later than 3 days. If the deadline is missed, section 25ח(ג) applies s.9(א): repair and claim reimbursement of reasonable expenses (keep receipts, and give reasonable notice first under s.9(ב) unless the defect is urgent), or reduce the rent in proportion to the lost value. Reasonable expenses so incurred may be set off against rent (s.25, non-waivable under 25יד(2)); withholding rent without that procedure is arrears
 - The **tenant** is responsible for defects caused by the tenant's unreasonable use (25ח(א)); the landlord's duty does not reach minor (קל ערך) defects
 - A clause that shifts ALL repair costs to the tenant is void to the extent it overrides the landlord's statutory duty. Under 25יד the listed provisions, 25ח(ב),(ג) included, may be varied only in the tenant's favour
 
@@ -131,7 +131,7 @@ Under the 2017 fair-rental provisions (commonly called Chok Schirut Hogenet, ח�
 
 | Clause | Hebrew | What to Verify | Red Flag |
 |--------|--------|---------------|----------|
-| Notice period | תקופת הודעה מוקדמת | Statutory minimum for a cancellation clause: 90 days landlord, 60 tenant (25יג(ב)) | Shorter than the statutory minimum |
+| Notice period | תקופת הודעה מוקדמת | Under a cancellation clause: at least 90 days from the landlord and 60 from the tenant (25יג(ב)); a shorter tenant notice is valid because it favours the tenant (25יד(2)) | A landlord notice shorter than 90 days, or a tenant notice longer than 60 days |
 | Early termination by tenant | ביטול מוקדם ע"י השוכר | Conditions, penalty, replacement tenant | No right to terminate early under any condition |
 | Early termination by landlord | ביטול מוקדם ע"י המשכיר | A no-cause right is valid only if the tenant has an equivalent one (25יג(א)), with at least 90 days' notice (25יג(ב)) | Landlord-only right to cancel at will (VOID) |
 | Penalty for early exit | קנס ביטול מוקדם | Should be reasonable | Penalty equals remaining rent |
@@ -146,7 +146,7 @@ Under the 2017 fair-rental provisions (commonly called Chok Schirut Hogenet, ח�
 | Subletting prohibition | איסור השכרת משנה | Does not remove the court's power to permit a sublet or assignment the landlord refuses unreasonably (s.22(א)(2)) |
 | Pet clause | סעיף חיות מחמד | If you have pets, ensure it is permitted |
 | Renovation restrictions | הגבלות שיפוצים | Cannot hang pictures, paint, etc. |
-| Landlord entry rights | זכות כניסה למשכיר | No statutory notice period exists, so negotiate one into the contract explicitly |
+| Landlord entry rights | זכות כניסה למשכיר | s.17: entry to inspect or repair at a reasonable time, after reasonable advance notice, with as little disturbance as possible; no fixed hours. The lease may vary this (s.17 is not on the 25יד list), so check its wording |
 | Assignment of rights | המחאת זכויות | Landlord selling property during lease |
 | Governing law and jurisdiction | דין חל וסמכות | Should be Israeli law, local court |
 
@@ -180,7 +180,7 @@ Clauses to challenge, with the statutory basis. Those marked VOID are unenforcea
 | Waiver of tenant rights | סעיף ויתור על זכויות | Void to the extent it varies a 25יד(2) provision against the tenant, and 25ו cannot be varied at all |
 | Landlord concealed a known defect | הסתרת פגם ידוע על ידי המשכיר | Breaches 25ג and item 7 of the Second Schedule |
 | Promissory note demanded | דרישת שטר חוב | Enforceable through the Execution Office without a full hearing. Outside the 25י(ב) ceiling, so the amount is a matter of negotiation, but 25י(ג),(ד) still govern realising it |
-| No written contract | ללא חוזה כתוב | Does not void the lease (25ב expressly), but leaves the terms hard to prove; 25ד gap-filling applies only if a model lease has been prescribed (only a draft exists) |
+| No written contract | ללא חוזה כתוב | Does not void the lease (25ב expressly), but leaves the terms hard to prove; 25ד gap-filling applies only if a model lease has been prescribed (not verified here; check) |
 | No property condition report | ללא פרוטוקול מצב דירה | Landlord can attribute pre-existing damage to the tenant |
-| Unlimited landlord entry | זכות כניסה בלתי מוגבלת | No statutory notice period exists; whatever the contract says is what governs, so negotiate it |
+| Unlimited landlord entry | זכות כניסה בלתי מוגבלת | Without a valid contrary clause, s.17 limits entry to inspection and repairs at a reasonable time, after reasonable advance notice and with minimal disturbance; s.11 protects undisturbed use. Read the clause against s.17 |
 | Unclear Arnona responsibility | אחריות ארנונה לא ברורה | Arnona is the tenant's under 25ט(א) as occupier, but the classification and amount should be verified |

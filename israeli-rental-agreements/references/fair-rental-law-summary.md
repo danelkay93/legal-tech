@@ -49,7 +49,7 @@ There is no statutory list of "structural" items. The test has two parts:
 
 | Who | Duty | Basis |
 |-----|------|-------|
-| Landlord | Repair, at their own cost, every defect that is not minor (קל ערך) and was not caused by the tenant's unreasonable use, within a reasonable time and no later than 30 days from the request; an urgent defect (one that does not allow reasonable living in the apartment) within 3 days | 25ח(ב) |
+| Landlord | Repair, at their own cost, every defect that is not minor (קל ערך) and was not caused by the tenant's unreasonable use, within a reasonable time and no later than 30 days from the request; an urgent defect (one that does not allow reasonable living in the apartment) within a reasonable time and no later than 3 days | 25ח(ב) |
 | Tenant | Liable for any defect caused by UNREASONABLE use of the apartment, and repairs it at their own cost unless agreed otherwise | 25ח(א) |
 
 Unreasonable use is not the same test as "normal wear and tear". Building common areas are handled through the house committee (va'ad bayit), whose ONGOING maintenance charge is the tenant's under 25ט(א)(4), but not a capital levy.
@@ -87,7 +87,7 @@ Unreasonable use is not the same test as "normal wear and tear". Building common
 |----------|------|-------|
 | End of the agreed term | The lease ends and the tenant must return the apartment free of persons and property (20(א)); a tenant who stays on faces a possession claim and a 25י(ג)(4) realisation | 20(א), 25י(ג)(4) |
 | No agreed term, or both parties carry on after it without a new one | Either party may end it on reasonable advance notice | 19(א) |
-| Cancellation clause without breach | A landlord-only right is VOID unless the tenant has an equivalent right. Minimum notice: 90 days for the landlord, 60 for the tenant | 25יג |
+| Cancellation clause without breach | A landlord-only right is VOID unless the tenant has an equivalent right. Notice: at least 90 days from the landlord and 60 from the tenant; a lease may ask less of the tenant, which favours the tenant (25יד(2)), but not less of the landlord | 25יג |
 | Option to extend | The option-holder must give notice: 90 days for a landlord's option, 60 for a tenant's; extension terms must be fixed in advance | 25יב |
 | Breach | Ordinary contract remedies; non-payment also opens the 25י(ג)(1) ground | Contract |
 
@@ -109,7 +109,7 @@ Unreasonable use is not the same test as "normal wear and tear". Building common
 | Right | Description |
 |-------|-------------|
 | Undisturbed use | The landlord must allow use of the apartment without disturbance by them or on their behalf (s.11) |
-| Entry | No statutory notice period exists for landlord entry. The contract governs, so negotiate a notice requirement into it |
+| Entry | s.17 (1971 text, not changed by the 2017 amendment): the tenant must allow inspection and repairs at any reasonable time, provided the landlord gives reasonable advance notice and minimises disturbance. No fixed hours; the lease may vary it, since s.17 is not on the 25יד list |
 | Self-help eviction | Unlawful. The tenant may seek an urgent court order, and a dispossessor must restore possession (Land Law s.19) |
 
 ### Guarantee Return Process
@@ -127,7 +127,7 @@ Unreasonable use is not the same test as "normal wear and tear". Building common
 | Guarantee | Up to the 25י(ב) ceiling for monetary-outlay guarantees; a promissory note or guarantors outside it |
 | Tenant-caused defects | The tenant is liable for defects from unreasonable use (25ח(א)) |
 | Termination for breach | Non-payment, damage from unreasonable use, illegal use, sub-letting or assignment without consent, where the landlord's refusal was reasonable (s.22) |
-| Inspection | Only as the contract provides |
+| Inspection | Section 17: inspection and repairs at a reasonable time, after reasonable advance notice and with as little disturbance as possible, unless the lease validly sets other terms |
 | Possession | A fast-track תביעה לפינוי מושכר (תקנה 81, Civil Procedure Regulations 2018) |
 
 ## How the Law Interacts with Other Laws
@@ -144,7 +144,7 @@ Unreasonable use is not the same test as "normal wear and tear". Building common
 
 | Forum | Hebrew | Jurisdiction | Cost |
 |-------|--------|-------------|------|
-| Small Claims Court | בית משפט לתביעות קטנות | Money claims up to NIS 39,900 (January 2026). Not for possession | 1% of claim, minimum NIS 50 |
+| Small Claims Court | בית משפט לתביעות קטנות | Money claims up to NIS 39,900, effective 1 January 2026. Not for possession; verify updates for later filing years | 1% of the claim, minimum NIS 50, rounded up to a multiple of NIS 5 (an exact multiple stays unchanged) |
 | Magistrate Court | בית משפט שלום | Larger money claims and possession claims | Court fees + potential lawyer costs |
 | Mediation | גישור | Any dispute, by agreement | Moderate |
 
@@ -164,7 +164,18 @@ Unreasonable use is not the same test as "normal wear and tear". Building common
 1. **Use a proper written contract** with all eight Second Schedule particulars
 2. **Disclose known defects and nuisances** in the contract, as section 25ג and item 7 of the Second Schedule require
 3. **Create a property condition report** at move-in with the tenant
-4. **Report rental income** to the Tax Authority (Mas Hachnasa); for 2026, residential rent is fully exempt up to 5,654 NIS a month
+4. **Check rental-income reporting and tax obligations.** For qualifying residential rental income, the 2026 exemption ceiling is NIS 5,654 per month. Partial exemption applies where NIS 5,654 < monthly rent < NIS 11,308, subject to the statutory conditions and aggregation rules. The ordinary 10% route taxes gross qualifying rental income without ordinary expense deductions. Since 2023, the conditional exception for a qualifying single-home owner who rents a home or makes qualifying institution payments permits deduction of qualifying actual payments, capped at the lower of qualifying rental income and NIS 90,000 annually; verify all eligibility conditions and prevent duplicate deductions. See the dated official sources below.
 5. **Respond to repair requests** within the 25ח(ב) deadlines, in writing
 6. **Keep records** of all communications with the tenant
 7. **Never use self-help**: recover possession through a תביעה לפינוי מושכר
+
+## Dated official sources for restored figures
+
+As of 28 October 2026:
+
+- Small-claims ceiling, NIS 39,900 effective 1 January 2026: [Courts filing service](https://www.gov.il/he/service/filing_a_small_claim?trigger=sugg).
+- Filing fee, 1%, minimum NIS 50, rounded up to a multiple of NIS 5: [official fee guide, chapter 3](https://www.gov.il/he/pages/fee_guide?chapterIndex=3).
+- Monthly rental exemption ceiling, NIS 5,654 in 2026: [Tax Authority 2026 deductions booklet, page 13](https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf).
+- Partial exemption and the ordinary 10% route, with the conditional owner-renting/institution-payment deduction effective since 2023: [Tax Authority 2025 rights guide, printed pages 41-42 and 50](https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf) and [official form 3302](https://www.gov.il/BlobFolder/service/itc3302/he/Service_Pages_Income_tax_itc3302.pdf). The qualifying actual payment, qualifying rental income and annual NIS 90,000 cap must all be respected; this is not a general expense deduction.
+
+The payment deadline remains a specific unresolved source conflict: the current Tax Authority service says 31 January, while its rights guide says within 30 days after year-end. This summary does not encode a payment deadline until that conflict is resolved against the governing provision.
